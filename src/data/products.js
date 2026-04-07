@@ -3,7 +3,7 @@ export const products = [
     slug: 'soya-lecithin-liquid',
     title: 'Soya Lecithin Liquid',
     category: 'Soya Oil',
-    price: '₹ 63.50 / Litre',
+    price: 'Get Latest Price',
     description: 'So as to accomplish high level of customer trust, we are keenly engaged in offering a broad consignment of Soya Lecithin Liquid. Widely used in food, cosmetics, and industrial applications.',
     image: '/soyalecithin.webp',
     features: [
@@ -25,7 +25,7 @@ export const products = [
     slug: 'defatted-soya-flour',
     title: 'Defatted Soya Flour',
     category: 'Soya Flour',
-    price: '₹ 32 / Kilogram',
+    price: 'Get Latest Price',
     description: 'Reckoned amid one of the credible market names, we are willingly engaged in offering high-quality Defatted Soya Flour to our patrons. Excellent source of protein for bakery and food processing.',
     image: '/defattedsoyaflour.webp',
     features: [
