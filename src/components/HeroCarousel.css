@@ -119,9 +119,54 @@
 
 @media (max-width: 768px) {
   .carousel-container {
-    height: 500px;
+    height: 90vh; /* Better full-screen feel on tablets */
+    min-height: 500px;
   }
+  
   .carousel-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+  }
+  
+  .carousel-content p {
+    font-size: 1.05rem;
+    margin-bottom: 28px;
+    padding: 0 10px;
+  }
+  
+  .carousel-buttons {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  /* Make buttons take up more width on smaller screens */
+  .carousel-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    height: 85vh; /* Fits mobile screens nicely */
+    min-height: 450px;
+  }
+  
+  .carousel-content {
+    padding-top: 20px;
+  }
+  
+  .carousel-content h1 {
+    font-size: 1.8rem; /* Smaller text so it fits perfectly on narrow phones */
+  }
+  
+  .carousel-content p {
+    font-size: 0.95rem;
   }
 }
