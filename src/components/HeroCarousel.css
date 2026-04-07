@@ -1,7 +1,8 @@
 .carousel-container {
   position: relative;
   width: 100%;
-  height: 600px; /* Or whatever height looks good */
+  height: 600px;
+  /* Or whatever height looks good */
   overflow: hidden;
 }
 
@@ -13,7 +14,8 @@
   height: 100%;
   opacity: 0;
   transition: opacity 1s ease-in-out, transform 5s linear;
-  transform: scale(1.05); /* Subtle zoom out effect */
+  transform: scale(1.05);
+  /* Subtle zoom out effect */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,38 +116,39 @@
 .dot.active {
   background-color: var(--white);
   transform: scale(1.3);
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 768px) {
   .carousel-container {
-    height: 90vh; /* Better full-screen feel on tablets */
+    height: 90vh;
+    /* Better full-screen feel on tablets */
     min-height: 500px;
   }
-  
+
   .carousel-content h1 {
     font-size: 2.2rem;
     margin-bottom: 16px;
   }
-  
+
   .carousel-content p {
     font-size: 1.05rem;
     margin-bottom: 28px;
     padding: 0 10px;
   }
-  
+
   .carousel-buttons {
     flex-direction: column;
     gap: 12px;
     align-items: center;
   }
-  
+
   /* Make buttons take up more width on smaller screens */
   .carousel-buttons .btn {
     width: 100%;
     max-width: 300px;
   }
-  
+
   .dot {
     width: 10px;
     height: 10px;
@@ -154,18 +157,20 @@
 
 @media (max-width: 480px) {
   .carousel-container {
-    height: 85vh; /* Fits mobile screens nicely */
+    height: 85vh;
+    /* Fits mobile screens nicely */
     min-height: 450px;
   }
-  
+
   .carousel-content {
     padding-top: 20px;
   }
-  
+
   .carousel-content h1 {
-    font-size: 1.8rem; /* Smaller text so it fits perfectly on narrow phones */
+    font-size: 1.8rem;
+    /* Smaller text so it fits perfectly on narrow phones */
   }
-  
+
   .carousel-content p {
     font-size: 0.95rem;
   }
