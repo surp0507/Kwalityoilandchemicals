@@ -7,8 +7,13 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Kwality Oil & Chemicals | Premium Soya Products & Flavouring Essence',
-  description: 'Leading wholesaler and manufacturer of Soya Flour, Custard Powder, Soya Oil, and Malt Extract Powder based in Indore, India. Established in 2012.',
+  description:
+    'Leading wholesaler and manufacturer of Soya Flour, Custard Powder, Soya Oil, and Malt Extract Powder based in Indore, India. Established in 2012.',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
+
 
 export default function RootLayout({ children }) {
   return (
