@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import ProductCard from '@/components/ProductCard';
+import HeroCarousel from '@/components/HeroCarousel';
 import { products as topProducts } from '@/data/products';
 import { ShieldCheck, Truck, Clock, Award } from 'lucide-react';
 import './Home.css';
@@ -8,21 +9,8 @@ export default function Home() {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="hero">
-        <div className="container hero-container">
-          <div className="hero-content">
-            <h1>Premium Quality Soya Products & Chemicals</h1>
-            <p className="hero-subtitle">
-              Established in 2012, Kwality Oil & Chemicals is your trusted partner for premium Soya Oil, Soya Flour, Flavouring Essence, and industrial chemicals.
-            </p>
-            <div className="hero-buttons">
-              <Link href="/products" className="btn btn-primary">Explore Products</Link>
-              <Link href="/contact" className="btn btn-secondary bg-white">Contact Us</Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroCarousel />
+
 
       {/* Why Choose Us */}
       <section className="section bg-light">
