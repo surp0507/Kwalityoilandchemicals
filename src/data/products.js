@@ -81,7 +81,7 @@ export const products = [
   },
   {
     slug: 'soya-lecithin-oil',
-    title: 'Soya Lecithin Oil',
+    title: 'Soya Lecithin Oil / Poultry Feed Oil',
     category: 'Soya Oil',
     price: 'Get Latest Price',
     description: 'High purity soya lecithin oil extracted systematically.',

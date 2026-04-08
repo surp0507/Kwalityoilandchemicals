@@ -25,7 +25,7 @@ export default function About() {
           <div style={{ backgroundColor: 'var(--white)', padding: '40px', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-md)', border: '1px solid var(--border)' }}>
             <h3 style={{ marginBottom: '24px', fontSize: '1.5rem', borderBottom: '2px solid var(--border)', paddingBottom: '12px' }}>Company Factsheet</h3>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <li><strong>Business Type:</strong> Wholesaler / Distributor</li>
+              <li><strong>Business Type:</strong> Wholesaler / Manufacturer</li>
               <li><strong>Established:</strong> 2012</li>
               <li><strong>Proprietor:</strong> Mr. M.L. Pal</li>
               <li><strong>Location:</strong> Indore, Madhya Pradesh, India</li>
