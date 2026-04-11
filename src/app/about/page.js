@@ -30,7 +30,7 @@ export default function About() {
               <li><strong>Proprietor:</strong> Mr. M.L. Pal</li>
               <li><strong>Location:</strong> Indore, Madhya Pradesh, India</li>
               <li><strong>Total Number of Employees:</strong> Up to 10 People</li>
-              <li><strong>Location:</strong> 40 L - 1.5 Cr</li>
+              <li><strong>Annual Turnover:</strong> 40 L - 1.5 Cr</li>
               <li><strong>GST Number:</strong> 23BJTPP8306F1ZY</li>
             </ul>
           </div>
