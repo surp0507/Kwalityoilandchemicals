@@ -19,8 +19,8 @@ export default function Navbar() {
 
         <nav className={`nav-links ${isOpen ? 'open' : ''}`}>
           <Link href="/" onClick={() => setIsOpen(false)} className={pathname === '/' ? 'active' : ''}>Home</Link>
-          <Link href="/about" onClick={() => setIsOpen(false)} className={pathname === '/about' ? 'active' : ''}>About Us</Link>
           <Link href="/products" onClick={() => setIsOpen(false)} className={pathname?.startsWith('/products') ? 'active' : ''}>Products</Link>
+          <Link href="/about" onClick={() => setIsOpen(false)} className={pathname === '/about' ? 'active' : ''}>About Us</Link>
           <Link href="/contact" onClick={() => setIsOpen(false)} className={`btn btn-primary btn-nav ${pathname === '/contact' ? 'active-btn' : ''}`}>Contact Us</Link>
         </nav>
 
