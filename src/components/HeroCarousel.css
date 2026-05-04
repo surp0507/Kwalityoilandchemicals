@@ -1,0 +1,177 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  /* Or whatever height looks good */
+  overflow: hidden;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 5s linear;
+  transform: scale(1.05);
+  /* Subtle zoom out effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 10;
+}
+
+.carousel-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+/* Gradient is now applied inline on the background image */
+
+.carousel-content {
+  max-width: 800px;
+  color: #ffffff;
+  z-index: 10;
+  position: relative;
+}
+
+.carousel-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 24px;
+  color: #ffffff !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.8s ease 0.3s;
+}
+
+.carousel-content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #f8fafc !important;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.8s ease 0.5s;
+}
+
+.carousel-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.8s ease 0.7s;
+}
+
+.carousel-buttons .bg-white {
+  background-color: var(--white);
+}
+
+.carousel-slide.active .carousel-content h1,
+.carousel-slide.active .carousel-content p,
+.carousel-slide.active .carousel-buttons {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Pagination Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 20;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dot.active {
+  background-color: var(--white);
+  transform: scale(1.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 90vh;
+    /* Better full-screen feel on tablets */
+    min-height: 500px;
+  }
+
+  .carousel-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+  }
+
+  .carousel-content p {
+    font-size: 1.05rem;
+    margin-bottom: 28px;
+    padding: 0 10px;
+  }
+
+  .carousel-buttons {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  /* Make buttons take up more width on smaller screens */
+  .carousel-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    height: 85vh;
+    /* Fits mobile screens nicely */
+    min-height: 450px;
+  }
+
+  .carousel-content {
+    padding-top: 20px;
+  }
+
+  .carousel-content h1 {
+    font-size: 1.8rem;
+    /* Smaller text so it fits perfectly on narrow phones */
+  }
+
+  .carousel-content p {
+    font-size: 0.95rem;
+  }
+}
